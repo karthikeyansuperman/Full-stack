@@ -1,0 +1,134 @@
+####1#####
+Arithmatic.java 
+public class Arithmetic 
+{
+int a=5;
+int b =7;
+int c;
+
+int add()
+{
+int c=a+b;
+System.out.println("the answer is "+c);
+return c;
+}
+int sub()
+{
+int c=a-c;
+System.out..println("the answer  is"+c);
+return c;
+}
+Int mul()
+{
+int c=a*b;
+System.out.println("the answer is"+c);
+return c;
+}
+int div()
+{
+int c=a/b;
+System.out.println("the answer is"+c);
+return c;
+}
+void main ()
+ {
+Arithmetic cal=new Arithmetic();
+ cal.add();
+ cal.sub();
+ cal.mul();
+ cal.div();
+}
+}
+_______________________________________
+####2#####
+public class mul 
+{
+int mul(int a,int b)
+{
+int c=a*b;
+System.out.println("the answer is "+c);
+return c;
+}
+void main()
+{
+mul cal=new mul();
+cal.mul(1,4);
+}
+}
+_____________________________________________
+####3#####
+public class mul 
+{
+int a=4;
+int b=7;
+int mul ()
+{
+int c =a*b;
+System.out.println("the answer is "+c);
+return c;
+}
+void main()
+{
+mul cal =new mul();
+cal.mul();
+}
+}
+_________________________________________________
+####4#####
+public class div 
+{
+int div(int a,int b)
+{
+int c=a*b;
+System.out.println("the answer is "+c);
+
+}
+void main()
+{
+div cal=new div();
+cal.div(1,4);
+}
+}
+_____________________________________________
+####5#####
+public class div 
+{
+int a=4;
+int b=7;
+int div ()
+{
+int c =a*b;
+System.out.println("the answer is "+c);
+}
+void main()
+{
+div cal =new div();
+cal.div();
+}
+}
+_________________________________________
+####6#####
+public class  Findthearea
+{
+ double findareaofcube(double a)
+{
+double ans=a*a;
+System.out.println("The answer is"+ans);
+return ans;
+}
+double findareaofsqure(double a)
+{
+double ans=a*findareaofcube(a);
+System.out.println("the answer is "+ans);
+return ans;
+}
+void main ()
+{
+Findthearea findthearea=new Findthearea();
+findthearea.findareaofcube(2);
+findthearea.findareaofsqure(8);
+}
+}
+
+
+
