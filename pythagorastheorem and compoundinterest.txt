@@ -1,0 +1,23 @@
+pythagoras theorem
+
+public class Main {
+  public static void main(String[] args) {
+    double a=8;
+    double b=8;
+    double c=Math.sqrt(a*a+b*b);
+    System.out.println("The answer is:"+c);
+    }
+ }
+
+CompountInterest
+
+
+public class Main{
+	public static void main(String [] args){
+    double totalamount=1000000.0;
+    double time=8.0;
+    double interest=7.5;
+    double totalcompoundinterest=totalamount*(Math.pow((1+intrest/100),time))-totalamount;
+    System.out.println("The interest amount is:"+totalcompoundinterest);
+    }
+ }
