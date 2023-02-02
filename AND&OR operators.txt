@@ -1,0 +1,32 @@
+public class Main{
+	public static void main (String[] args){
+    boolean MedicalTest=true;
+    boolean WrittenTest=true;
+    boolean RunningTest=true;
+    if(MedicalTest && WrittenTest && RunningTest)
+    {
+    System.out.println("you are selected");
+    }
+    else
+    {
+    System.out.println("you are not selected");
+    }
+ }
+ }
+ 
+public class Main{
+	public static void main(String[] args){
+    int YourTotalMark=950;
+    int YourCutoffMark=150;
+    if(YourTotalMark >=960 || YourCutoffMark >=170)
+    {
+    System.out.println("Your collage seat conformed");
+    }
+    else
+    {
+    System.out.println("Your collage seat not conformed");
+    }
+    }  
+ }
+    
+    
