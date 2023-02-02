@@ -1,0 +1,55 @@
+IF
+
+public class Main{
+	public static void main(String[] args)
+    {
+    int age=18;
+    if(age <18)
+    {
+    System.out.println("you are minor");
+    }
+    }
+}
+
+IF Else
+
+public class Main{
+	public static void main(String[] args)
+    {
+    int age=18;
+    if(age <18)
+    {
+    System.out.println("you are minor");
+    }
+    else 
+    {
+    System.out.println("you are major");
+    }
+    }
+}
+
+Nested IF OR IF Else Ladder
+
+//using age scenario
+public class Main{
+	public static void main(String[] args)
+    {
+    int age=17;
+    if(age <18)
+    {
+    System.out.println("you are minor");
+    }
+    else 
+    {
+    if(age<=59)
+    {
+    System.out.println("you are major");
+    }
+    else 
+    {
+    System.out.println("you are major and senior citizen");
+    }
+    }
+}
+}
+
