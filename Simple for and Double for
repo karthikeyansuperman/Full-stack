@@ -1,0 +1,41 @@
+simple for
+Public class Main{
+  public static void main(String[] args){
+  int num=18;
+  for(int i=1;i<=num;i=i+1)
+  {
+  System.out.println(i);
+  }
+  }
+  }
+  
+  
+  Double for 
+  
+  public class Main{
+    public static void main(String[] args){
+    int num=5;
+    for(int i=1;i<=num;i=i+1)
+    {
+    for(int j=1;j<=num;j=j+1)
+    {
+    System.out.println(i+" "+j);
+    }
+    }
+    }
+    }
+    
+    Double for tircky
+    
+    public class Main{
+      public static void main(String[] args){
+      int num=6;
+      for(int i=1;i<=num;i=i+1)
+      {
+      for(int j=i;j<=num;j=j+1)
+      {
+      System.out.println(i+"  "+j);
+      }
+      }
+      }
+      }
