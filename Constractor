@@ -1,0 +1,28 @@
+public class Constractor
+{
+int studid;
+String studname;
+char studgrade; 
+Constractor(int studid,String studname,char studgrade)
+{
+this.studid=studid;
+this.studname=studname;
+this.studgrade=studgrade;
+}
+Constractor(String studname,char studgrade)
+{
+this.studname=studname;
+this.studgrade=studgrade;
+}
+void display()
+{
+System.out.println("the answer is:"+studid+" "+studname+" "+studgrade);
+}
+public static void main(String args[])
+{
+Constractor n1=new Constractor(1,"karthi",'a');
+Constractor n2=new Constractor("raj",'b');
+n1.display();
+n2.display();
+}
+}
