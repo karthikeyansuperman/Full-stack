@@ -1,0 +1,54 @@
+____________________________
+
+Overloading 
+____________________________
+
+
+public class Overloading 
+{
+void a(int a,int b)
+{
+int c=a+b;
+System.out.println("The answer is"+c);
+}
+void a(int a,int b,int c)
+{
+int d=a+b+c;
+System.out.println("the Answer is"+d);
+}
+public static void main(String args[])
+{
+Overloading cal=new Overloading();
+cal.a(5,6);
+cal.a(7,9,8);
+}
+}
+____________________________
+
+Overriding 
+____________________________
+
+public class mm
+{
+void String()
+{
+String a="karthi";
+System.out.println("The name is"+a);
+}
+
+public static void main(String args[])
+{
+mn n=new mn();
+n.String();
+}
+
+}
+class mn extends mm
+{
+void String()
+{
+String a="hi karthi";
+System.out.println("the name is"+a);
+}
+
+}
