@@ -1,0 +1,44 @@
+public class Bank
+{
+static int debitTxCounter=0;
+static int creditTxcounter=0;
+int accountNumber;
+String customerName;
+double accountbalance;
+ 
+Bank(int accountNumber,String customerName,double accountbalance)
+{
+this.accountNumber=accountNumber;
+this.customerName=customerName;
+this.accountbalance=accountbalance;
+}
+double credit(double amount)
+{
+System.out.println(accountNumber+" "+customerName);
+System.out.println("Before credit"+ accountbalance);
+accountbalance=accountbalance+amount;
+System.out.println("After credit"+accountbalance);
+creditTxcounter=creditTxcounter+1;
+return accountbalance;
+}
+double debit(double amount)
+{
+System.out.println(accountNumber+" "+customerName);
+System.out.println("Before debit"+accountbalance);
+accountbalance=accountbalance+amount;
+System.out.println("After debit"+accountbalance);
+debitTxCounter=debitTxCounter+1;
+return accountbalance;
+}
+public static void main(String args[])
+{
+Bank b1=new Bank(12,"karthi",25000.0);
+Bank b2=new Bank(13,"karthiga",26000.0);
+Bank b3=new Bank(14,"karthick",27000.0);
+b1.debit(1000.0);
+b2.credit(1000.0);
+b1.credit(8000.0);
+System.out.println(debitTxCounter);
+System.out.println(creditTxcounter);
+}
+}
