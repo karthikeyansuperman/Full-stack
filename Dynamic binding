@@ -1,0 +1,52 @@
+public class Dynamic 
+{
+public static void main(String args[])
+{
+a2b b=new a2bus();
+b.tax(100.0);
+b=new a2buk();
+b.tax(100.0);
+b=new a2bin();
+b.tax(100.0);
+}
+}
+class a2b
+{
+double tax(double billAmount)
+{
+double taxpercentage=10.0;
+double taxAmount=billAmount*taxpercentage/100.0;
+System.out.println(taxAmount);
+return taxAmount;
+}
+}
+class a2bus extends a2b 
+{
+double tax(double billAmount)
+{
+double taxpercentage=20.0;
+double taxAmount=billAmount*taxpercentage/100.0;
+System.out.println(taxAmount);
+return taxAmount;
+}
+}
+class a2buk extends a2b
+{
+double tax(double billAmount)
+{
+double taxpercentage=30.0;
+double taxAmount=billAmount*taxpercentage/100.0;
+System.out.println(taxAmount);
+return taxAmount;
+}
+}
+class a2bin extends a2b
+{
+double tax(double billAmount)
+{
+double taxpercentage=5.0;
+double taxAmount=billAmount*taxpercentage/100.0;
+System.out.println(taxAmount);
+return taxAmount;
+}
+}
