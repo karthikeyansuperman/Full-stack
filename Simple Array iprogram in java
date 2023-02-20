@@ -1,0 +1,80 @@
+find the odd numbers of an Array
+public class Array
+{
+public static void main(String args[]){
+int a[]={2,3,6,7,8};
+for(int i=0;i<a.length;i=i+1)
+{
+if(a[i]%2==0)
+{
+System.out.println(a[i]);
+}
+}
+}
+}
+----------------------------------------
+
+find the even numbers of an array 
+public class Array
+{
+public static void main(String args[]){
+int a[]={2,3,6,7,8};
+for(int i=0;i<a.length;i=i+1)
+{
+if(a[i]%2==0)
+{
+System.out.println(a[i]);
+}
+}
+}
+}
+--------------------------------
+find multiply of 7 in given array 
+public class Array
+{
+public static void main(String args[]){
+int a[]={14,21,28,8,9};
+for(int i=0;i<a.length;i=i+1)
+{
+if(a[i]%7==0)
+{
+System.out.println(a[i]);
+}
+}
+}
+}
+---------------------------------------
+Find the 5 th Occurrence of an Element in an Array
+public class Array
+{
+public static void main(String args[]){
+int search=5;
+int count=0;
+int a[]={14,21,5,28,8,9,6,5};
+for(int i=0;i<a.length;i=i+1)
+{
+if(search==a[i])
+{
+System.out.println(a[i]);
+count=count+1;
+}
+}
+System.out.println(count);
+}
+}
+
+print all 2 digit element in an array 
+
+public class Array
+{
+public static void main(String args[]){
+int a[]={14,21,5,28,8,9,6,5};
+for(int i=0;i<a.length;i=i+1)
+{
+if(10<=a[i])
+{
+System.out.println(a[i]);
+}
+}
+}
+}
