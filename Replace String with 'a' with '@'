@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+       String name="karthi";
+        char c[]= new char[name.length()];
+       for (int i=0;i<name.length();i++)
+       {
+           c[i]=name.charAt(i);
+
+           if (c[i]=='a')
+           {
+               c[i]='@';
+           }
+           System.out.println(c[i]);
+       }
+    }
+}
