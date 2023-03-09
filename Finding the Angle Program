@@ -1,0 +1,30 @@
+public class findingAngleProgram {
+
+        public static void main(String args[])
+
+        {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("Enter the angle value:");
+            int x=sc.nextInt();
+            if(x<=89)
+            {
+                System.out.println("Given value "+x+" is a Acute Angle");
+            }
+else if (x==90)
+{
+    System.out.println("Given value "+x+" is a Right Angle");
+}
+else if((90)<=(180))
+            {
+                System.out.println("Given value "+x+" is a Obtuse Angle");
+            }
+else if(x==180)
+{
+    System.out.println("Given value "+x+" is a Straight Angle");
+
+}
+else {
+     System.out.println("Given value "+x+" is a Wrong input");
+            }
+        }
+}
