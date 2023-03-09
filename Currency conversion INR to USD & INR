@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class currencyConverstion {
+    public static void main(String args[])
+    {  Scanner sc=new Scanner(System.in);
+        System.out.println("We have currency conversion Program for 2 states \n 1.USD \n 2.IDR");
+        double amount=sc.nextDouble();
+
+  switch ((int)amount){
+      default:
+          System.out.println("you entered invalid key");
+          break;
+      case 1:
+          double USD=82.01;
+          System.out.print("Enter the INR Amount ");
+          double INR=sc.nextDouble();
+          USD=INR*USD;
+          System.out.println("The amount of INR "+INR+" to USD is "+USD);
+       break;
+      case 2:
+          double IDR=187.91;
+          System.out.print("Enter the INR Amount ");
+          double INR1=sc.nextDouble();
+          IDR=INR1*IDR;
+          System.out.println("The amount of INR "+INR1+" to IDR is "+IDR);
+break;
+
+  }
+    }
+}
