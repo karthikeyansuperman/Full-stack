@@ -1,0 +1,46 @@
+Pre Defined Method 
+
+public class power5 {
+    int power() {
+        double a = 5.0;
+        double b = 2.0;
+        System.out.println("The 5 power 2 Answer is:" + Math.pow(a, b));
+        System.out.println("The 2 power 5 Answer is:" + Math.pow(b, a));
+        return 0;
+    }
+    public static void main(String args[])
+    {
+
+power5 obj=new power5();
+obj.power();
+    }
+}
+
+Math power function in forloop
+public class powerinForLoop{
+    public static void main(String args[])
+    {
+        double power=5;
+        double base=2;
+        double ans=1;
+        double ans2=1;
+        for (int i=1;i<=power;i++)
+        {
+            ans=base*ans;
+        }
+        System.out.println("The answer is:"+ans);
+        for(int j=1;j<=base;j++)
+        {
+            ans2=power*ans2;
+        }
+        System.out.println("the answer is :"+ans2);
+        if(ans>ans2)
+        {
+            System.out.println("The "+base+" Power "+power+" is Grater "+ans);
+        }
+        else
+        {
+            System.out.println("The "+power+" Power "+base+" is Grater "+ans2);
+        }
+    }
+}
