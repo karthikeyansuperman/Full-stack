@@ -1,0 +1,11 @@
+public class circumferenceOfCircle {
+
+    public static void main(String args[])
+    {
+     Scanner sc=new Scanner(System.in);
+     System.out.println("Enter the value of R ");
+     double cr=sc.nextDouble();
+     double ans=2*3.14*cr;
+     System.out.println("Area of circle "+Math.abs(cr)+"π circumference is "+ans);
+    }
+}
