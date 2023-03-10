@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class currencyConverstion {
+public class currencyConversion {
     public static void main(String args[])
     {  Scanner sc=new Scanner(System.in);
         System.out.println("We have currency conversion Program for 2 states \n 1.USD \n 2.IDR");
