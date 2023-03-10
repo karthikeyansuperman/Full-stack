@@ -1,0 +1,19 @@
+public class CountNumberOfPunctuation {
+    public static void main(String args[]){
+        String a[]={"Successful people are not gifted; they just work-hard, then succeed on purpose."};
+        int counter=0;
+        for(int i=0;i<a.length;i++)
+        {
+            String s=a[i];
+            char c[]=s.toCharArray();
+            for(int p:c)
+            {
+                if(p==32!=p<=64)
+                {
+                    counter++;
+                }
+            }
+        }
+System.out.println("The number of punctuation:"+counter);
+    }
+}
