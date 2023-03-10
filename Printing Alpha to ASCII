@@ -1,0 +1,14 @@
+public class AlphatoAscii{
+    public static void main(String args[]){
+        String a[]={"computer"};
+        for(int i=0;i<a.length;i++)
+        {
+            String s=a[i];
+            char c[]=s.toCharArray();
+            for(char p:c) {
+                System.out.println(p + "------->" + ((int) p));
+            }
+        }
+
+    }
+}
