@@ -14,7 +14,7 @@ public class currencyConverstion {
           double USD=82.01;
           System.out.print("Enter the INR Amount ");
           double INR=sc.nextDouble();
-          USD=INR*USD;
+          USD=INR/USD;
           System.out.println("The amount of INR "+INR+" to USD is "+USD);
        break;
       case 2:
