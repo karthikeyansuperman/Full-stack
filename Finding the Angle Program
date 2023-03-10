@@ -14,7 +14,7 @@ else if (x==90)
 {
     System.out.println("Given value "+x+" is a Right Angle");
 }
-else if((90)<=(180))
+else if(x<=180)
             {
                 System.out.println("Given value "+x+" is a Obtuse Angle");
             }
