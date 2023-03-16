@@ -1,0 +1,27 @@
+import java.io.FileReader;
+
+public class CountNoOfCharacterInFile {
+    public static void main(String[] args) {
+        int i=0;
+        String s="";
+        int counter=0;
+        try {
+            FileReader fr=new FileReader("C:\\java\\reader.txt");
+            while ((i= fr.read())!=-1)
+            {
+               s=s+((char)i);
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println("Enter the correct path");
+        }
+        char v[]=s.toCharArray();
+        for (char j:v)
+            if(j!=' ')
+            {
+                counter++;
+            }
+        System.out.println("The number of character in text file is:"+counter);
+    }
+}
