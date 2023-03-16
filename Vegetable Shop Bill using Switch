@@ -1,0 +1,64 @@
+import java.util.Scanner;
+public class billing {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("This is our product list \n1.Tomato\n2.Onion\n3.Beans\n4.Carrot\n5.Cucumber\n6.Print the Bill");
+        int Tomato = 20, Onion = 25, Beans = 45, Carrot = 40, Cucumber = 15, Id;
+        double id1 = 0, id2 = 0, id3 = 0, id4 = 0, id5 = 0, d = 0;
+        double v1=0.0,v2=0.0,v3=0.0,v4=0.0,v5=0.0;
+       abs:while(true) {
+            System.out.println("Enter the product ID:");
+            Id = sc.nextInt();
+            if (Id != 0&&Id !=6&&Id
+                    <=6) {
+                System.out.println("Enter the Quantity of the Product:");
+                d=sc.nextDouble();
+            }
+            switch (Id) {
+                case 0:
+                    break abs;
+                case 1:
+                    v1+=d;
+                    id1 = Tomato * d;
+                    break;
+                case 2:
+                    v2+=d;
+                    id2 = Onion * d;
+                    break;
+                case 3:
+                    v3+=d;
+                    id3 = Beans * d;
+                    break;
+                case 4:
+                    v4+=d;
+                    id4 = Carrot * d;
+                    break;
+                case 5:
+                    v5+=d;
+                    id5 = Cucumber * d;
+                    break;
+                case 6:
+                    double Total = id1 + id2 + id3 + id4 + id5;
+                    System.out.println("\t\t\tKK vegetables Shop\n\t\t\t\tYour bill\n\nWe Always Welcomes you\n<-*-*-*-*-*-*-*-*-*-*-*>");
+                    if (id1>0)
+                    {
+                        System.out.println("Tomato 20\t" + v1 + " Kg Quantity\t" + id1);
+                    }if(id2>0){
+                        System.out.println("Onion 25\t" + v2 + " Kg Quantity\t" + id2);
+                }if(id3>0){
+                        System.out.println("Beans 45\t" + v3 + " Kg Quantity\t" + id3);
+                }if(id4>0){
+                        System.out.println("Carrot 40\t" + v4 + " Kg Quantity\t" + id4);
+                }if(id5>0){
+                        System.out.println("Cucumber 15\t" + v5 + " Kg Quantity\t" + id5);
+                }
+                    System.out.println("Your total bill Amount " + Total + "\n\t\t Thank you");
+                default:
+                    System.out.println("Invalid input please enter the correct input");
+                    Id =sc.nextInt();
+                    break;
+            }
+        }
+        sc.close();
+    }
+}
