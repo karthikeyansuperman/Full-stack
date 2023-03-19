@@ -1,0 +1,48 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class Word4 {
+    public static void main(String[] args) {
+        String R="";
+String FirstString="";
+String SecoundString="";
+
+        try {
+            FileWriter fw = new FileWriter("C:\\java\\FirstString");
+            BufferedWriter bw=new BufferedWriter(fw);
+            FileWriter fw1=new FileWriter("C:\\java\\SecondString");
+            BufferedWriter bw1=new BufferedWriter(fw1);
+            FileReader fr = new FileReader("C:\\java program\\ReadingDoc.txt");
+            BufferedReader br=new BufferedReader(fr);
+            int i=0;
+            while (br.ready())
+            {
+                R =R+" "+br.readLine();
+            }
+            String v[]=R.split(" ");
+            for (int j=0;j<v.length;j++)
+            {
+                if(v[j].length()<4)
+                {
+                    FirstString=FirstString+v[j]+" ";
+                }
+                else
+                {
+                    SecoundString=SecoundString+v[j]+" ";
+                }
+            }
+
+            bw.write(FirstString);
+            bw1.write(SecoundString);
+            bw.close();
+            bw1.close();
+        }
+
+        catch (Exception e)
+        {
+            System.out.println("your error message\n"+e);
+        }
+    }
+}
